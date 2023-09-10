@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Person>
+
+<p>Important message: @ViewBag.Message</p>
+
+@{
+    foreach(var p in Model)
+    {
+        <h2>Hello</h2>
+        <h1>@p.FirstName</h1> @Html.ActionLink("szczegóły", "Details", "Person", new {id = p.Id})
+        <a asp-controller="Person" asp-action="Details" asp-route-id="@p.Id">szczegóły 2</a>
+        <br/>
+    }
+}
+

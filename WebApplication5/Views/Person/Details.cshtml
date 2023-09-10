@@ -1,0 +1,26 @@
+﻿@model Person
+
+@section Scripts 
+{
+    <script></script>
+}
+<table>
+    <thead>
+        <tr>
+            <td>@Html.DisplayNameFor(m => m.Id)</td>
+            <td>@Html.DisplayNameFor(m => m.FirstName)</td>
+            <td>@Html.DisplayNameFor(m => m.LastName)</td>
+            <td>@Html.DisplayNameFor(m => m.EmailAddress)</td>
+            <td>@Html.DisplayNameFor(m => m.Age)</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.FirstName</td>
+            <td>@Model.LastName</td>
+            <td>@Model.EmailAddress</td>
+            <td>@Model.Age</td>
+        </tr>
+    </tbody>
+</table>
